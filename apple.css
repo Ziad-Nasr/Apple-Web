@@ -101,6 +101,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  z-index: 99;
 }
 .iPhone {
   position: relative;
@@ -242,4 +244,70 @@ footer ul li {
 }
 .Policy:hover {
   text-decoration: underline;
+}
+.LinkStuffPhone {
+  position: absolute;
+  width: 108%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 99;
+  right: 2%;
+}
+.LinkStuffwatch {
+  position: absolute;
+  width: 108%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 99;
+  right: -10%;
+}
+.LinkStuffairpods {
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 99;
+  right: 0%;
+}
+.LinkStuffipad {
+  position: absolute;
+  width: 108%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 99;
+  right: -10%;
+}
+.LinkStuffairtag {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 3;
+  right: 0%;
+}
+.LinkStuffmovies {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0%;
+  cursor: pointer;
+  z-index: 3;
+}
+@media (min-width: 200px) {
+  .LinkStuffwatch {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+    right: 0%;
+  }
+  .LinkStuffipad {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 99;
+    right: 0%;
+  }
 }
