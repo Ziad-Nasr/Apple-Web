@@ -26,6 +26,7 @@
   letter-spacing: -0.1px;
   font-family: "SFProText-Light", sans-serif;
 }
+
 .Mac a {
   color: white;
 }
@@ -42,8 +43,8 @@
   font-weight: 500;
 }
 .M2 {
-  width: 60px;
-  height: 5px;
+  width: 45px;
+  height: 45px;
 }
 .Avail {
   font-size: 24px;
@@ -69,8 +70,7 @@
   color: black;
 }
 .M2Black {
-  width: 30px;
-  height: 5px;
+  height: 35px;
 }
 .LinkMac {
   position: absolute;
@@ -167,12 +167,12 @@
   .MacText .title1 {
     font-size: 48px;
   }
-  .Airpods {
+  /* .Airpods {
     padding-bottom: 4rem;
   }
   .TVtext {
     padding-bottom: 4rem;
-  }
+  } */
 }
 @media (min-width: 900px) {
   .DoublePhone .MacText .title1 {
@@ -180,17 +180,17 @@
   }
 }
 @media (min-width: 750px) {
-  .watch {
+  /* .watch {
     padding-bottom: 8.3rem;
   }
   .TV {
     padding-bottom: 5.3rem;
-  }
+  } */
 }
 @media (min-width: 920px) {
-  .FirstCol {
-    margin-left: -5rem;
-  }
+  /* .FirstCol {
+  } */
+  /*
   .SecondCol {
     margin-right: -5rem;
   }
@@ -199,16 +199,16 @@
   }
   .TVtext {
     padding-bottom: 2rem;
-  }
+  } */
   .MacAirText {
     margin-top: 40%;
   }
-  .DoublePhone {
+  /* .DoublePhone {
     padding-bottom: 11.8rem;
   }
   .Airtag {
     padding-bottom: 11.1rem;
-  }
+  } */
 }
 .GrayScale {
   background-color: #fbfbfb;
@@ -234,7 +234,9 @@ footer ul li {
   font-weight: 400;
 }
 .AppletvInfo {
-  font-size: 1rem;
+  font-size: 14px;
+  font-family: "SFProText-Regular";
+  font-weight: 600;
 }
 .learnmoreProductsasd {
   font-size: 16px;
@@ -247,23 +249,23 @@ footer ul li {
 }
 .LinkStuffPhone {
   position: absolute;
-  width: 108%;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   z-index: 99;
-  right: 2%;
+  right: 0%;
 }
 .LinkStuffwatch {
   position: absolute;
-  width: 108%;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   z-index: 99;
-  right: -10%;
+  right: 0%;
 }
 .LinkStuffairpods {
   position: absolute;
-  width: 110%;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   z-index: 99;
@@ -271,11 +273,11 @@ footer ul li {
 }
 .LinkStuffipad {
   position: absolute;
-  width: 108%;
+  width: 100%;
   height: 100%;
   cursor: pointer;
   z-index: 99;
-  right: -10%;
+  right: 0%;
 }
 .LinkStuffairtag {
   position: absolute;
@@ -293,7 +295,11 @@ footer ul li {
   cursor: pointer;
   z-index: 3;
 }
-@media (min-width: 200px) {
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (man-width: 200px) {
   .LinkStuffwatch {
     position: absolute;
     width: 100%;
@@ -310,4 +316,73 @@ footer ul li {
     z-index: 99;
     right: 0%;
   }
+}
+.navbar-toggler-icon {
+  background-image: url(img/menu.png) !important;
+  padding-top: 5px;
+}
+@media (max-width: 768px) {
+  .navbar-toggler {
+    padding-top: 8px;
+    position: relative;
+  }
+  .midapple {
+    position: absolute;
+    left: 50%;
+    top: 3px;
+  }
+
+  .Mac {
+    margin-top: 46px;
+  }
+  .menuFixed {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  .accordion {
+    display: block !important;
+  }
+  .test {
+    display: none;
+  }
+  .lastline {
+    display: none;
+  }
+}
+.accordion {
+  display: none;
+}
+.accordion-item {
+  background-color: #f5f5f7;
+}
+.accordion-button {
+  background-color: #f5f5f7 !important;
+  color: black !important;
+  padding: 2px;
+  font-size: 12px;
+  font-family: "SFProText-Light";
+  font-weight: 400;
+}
+.accordion {
+  border-width: 0px !important;
+  --bs-accordion-border-width: 0px;
+}
+.accordion-button:focus {
+  background-color: #f5f5f7;
+  color: black;
+}
+
+.columns {
+  border: white solid 4px;
+  background: #fbfbfb;
+}
+.columnsblack {
+  background-color: black;
+  border: white solid 4px;
+}
+.accordion-body {
+  padding: 5px;
+  padding-left: 10px;
 }
