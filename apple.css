@@ -318,7 +318,7 @@ footer ul li {
   }
 }
 .navbar-toggler-icon {
-  background-image: url(img/menu.png) !important;
+  background-image: url("img/menu.png") !important;
   padding-top: 5px;
 }
 @media (max-width: 768px) {
@@ -369,11 +369,9 @@ footer ul li {
   border-width: 0px !important;
   --bs-accordion-border-width: 0px;
 }
-.accordion-button:focus {
-  background-color: #f5f5f7;
-  color: black;
+.accordion-button::after {
+  background-image: url("https://img.icons8.com/external-basicons-line-edtgraphics/50/000000/external-add-ui-basic-basicons-line-edtgraphics-2.png") !important;
 }
-
 .columns {
   border: white solid 4px;
   background: #fbfbfb;
